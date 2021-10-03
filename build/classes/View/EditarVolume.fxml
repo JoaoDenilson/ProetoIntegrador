@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="editarVolume" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EditarVolumeController">
+   <children>
+      <Text layoutX="76.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volume" wrappingWidth="53.98827329277992">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfVolume" layoutX="78.0" layoutY="125.0" prefHeight="25.0" prefWidth="54.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="184.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edição" wrappingWidth="53.98828125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfEdicao" layoutX="184.0" layoutY="125.0" prefHeight="25.0" prefWidth="122.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="354.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano" wrappingWidth="53.98828125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfAnoFinal" layoutX="353.0" layoutY="125.0" prefHeight="25.0" prefWidth="102.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="78.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Indicação de Responsabilidade" wrappingWidth="244.00000109616667">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfIndicacao" layoutX="78.0" layoutY="210.0" prefHeight="30.0" prefWidth="376.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btSalvar" layoutX="323.0" layoutY="343.0" mnemonicParsing="false" onAction="#cadastrarVolume" style="-fx-background-color: Green;" text="Salvar" textFill="#fcfafa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCancelarVolume" layoutX="397.0" layoutY="343.0" mnemonicParsing="false" onAction="#cancelarVolume" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

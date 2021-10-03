@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pesquisarObra" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PesquisarObraController">
+   <children>
+      <TableView fx:id="idtableObras" layoutX="42.0" layoutY="143.0" prefHeight="220.0" prefWidth="452.0">
+         <columns>
+            <TableColumn fx:id="cIssn" prefWidth="46.0" text="ISSN" />
+            <TableColumn fx:id="cTitulo" prefWidth="133.0" text="Titulo" />
+            <TableColumn fx:id="cEditora" prefWidth="112.0" text="Editora " />
+            <TableColumn fx:id="cLocal" prefWidth="160.0" text="Local" />
+         </columns>
+      </TableView>
+      <TextField fx:id="tfTitulo" layoutX="42.0" layoutY="89.0" prefHeight="30.0" prefWidth="131.0" />
+      <Button fx:id="btPesquisar" layoutX="454.0" layoutY="89.0" mnemonicParsing="false" onAction="#PesquisarObra" prefHeight="30.0" prefWidth="36.0" text="IR" />
+      <ComboBox fx:id="cbEditora" layoutX="184.0" layoutY="89.0" prefHeight="30.0" prefWidth="122.0" />
+      <ComboBox fx:id="cbLocal" layoutX="320.0" layoutY="89.0" prefHeight="30.0" prefWidth="122.0" />
+      <Text layoutX="42.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo" wrappingWidth="76.982421875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="184.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editora" wrappingWidth="76.982421875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="328.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local" wrappingWidth="76.982421875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btEditarObra" layoutX="434.0" layoutY="374.0" mnemonicParsing="false" onAction="#EditarObra" style="-fx-background-color: green;" text="Editar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btVoltar" layoutX="366.0" layoutY="374.0" mnemonicParsing="false" onAction="#cancelarPesquisa" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: red;" text="Voltar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btExcluirObra" layoutX="298.0" layoutY="374.0" mnemonicParsing="false" onAction="#ExcluirObra" style="-fx-background-color: black;" text="Excluir" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCadVolume" layoutX="42.0" layoutY="374.0" mnemonicParsing="false" onAction="#cadastrarVolume" prefHeight="30.0" prefWidth="131.0" style="-fx-background-color: blue;" text="Cadastrar Volume" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

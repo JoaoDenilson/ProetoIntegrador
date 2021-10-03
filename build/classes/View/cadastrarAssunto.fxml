@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="cadastrarAssunto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CadastrarAssuntoController">
+   <children>
+      <Text layoutX="154.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar Assunto">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tftext" layoutX="176.0" layoutY="153.0" prefHeight="30.0" prefWidth="184.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btCadastrarAssunto" layoutX="281.0" layoutY="249.0" mnemonicParsing="false" onAction="#cadastrarAssunto" style="-fx-background-color: green;" text="Cadastrar" textFill="#f8f0f0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCancelarAssunto" layoutX="195.0" layoutY="249.0" mnemonicParsing="false" onAction="#cancelarAssunto" style="-fx-background-color: red;" text="Cancelar" textFill="#fcf8f8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
